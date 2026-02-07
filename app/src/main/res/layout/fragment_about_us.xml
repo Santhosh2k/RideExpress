@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.AboutUsFragment"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:src="@drawable/about1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AboutUs"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about1Desc"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about1Desc"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvAboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp"
+                android:background="@color/yellow"
+                android:textColor="@color/black"
+                android:text="@string/aboutUs"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

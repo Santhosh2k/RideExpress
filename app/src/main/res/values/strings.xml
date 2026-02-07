@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RideExpress</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome to RideExpress</string>
+    <string name="aboutUs">About Us   -></string>
+    <string name="services">Services</string>
+    <string name="ourServices">Our Best Services For You</string>
+    <string name="appDesc">Affordable Airport Taxi in Bangalore | Bangalore Airport Taxi Service</string>
+    <string name="about1">Reliable Airport Pickup and Drop Services</string>
+    <string name="about1Desc">Founded in 2024, Ridexpress is Bangalore trusted alternative to bangalore taxis and public transportation. We specialize in seamless airport pickups, Mysore cabs, intercity taxi service, and outstation rides to destinations like Mysore Palace, ensuring a smooth and comfortable journey.</string>
+</resources>
