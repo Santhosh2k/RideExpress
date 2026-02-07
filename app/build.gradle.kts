@@ -61,4 +61,25 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    dependencies {
+        // ... other libs.androidx dependencies stay as they are ...
+
+        // FIX: Added quotes and parentheses    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+        implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+        // OkHttp logging
+        implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+
+        // Coroutines
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+
+        // Lifecycle
+        implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+        // Note: You already have libs.androidx.lifecycle.runtime.ktx above,
+        // so this line below is likely redundant, but here is the correct syntax:
+        implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    }
+
 }

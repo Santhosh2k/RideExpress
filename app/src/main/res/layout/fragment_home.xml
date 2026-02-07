@@ -130,16 +130,44 @@
         app:layout_constraintTop_toBottomOf="@id/llCards"
         app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/tvAboutUs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingVertical="5dp"
-        android:paddingHorizontal="10dp"
-        android:textColor="@color/black"
-        android:text="@string/aboutUs"
-       />
+        <TextView
+            android:id="@+id/tvAboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:text="@string/aboutUs"
+            />
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnViewBookings"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="View Bookings"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@color/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnBookRideNow"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btnBookRideNow"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Book Ride Now"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@color/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Your Ride"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pickup Location"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etPickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Enter pickup location"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dropoff Location"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etDropoffLocation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Enter dropoff location"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pickup Time"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etPickupTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Select time"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="time"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated Fare"
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvEstimatedFare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated Fare: ₹0"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Notes"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etAdditionalNotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Enter any special requests"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btnRequestRide"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/yellow"
+                android:text="Request Ride"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

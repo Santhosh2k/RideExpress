@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import com.example.rideexpress.R
 
@@ -36,6 +37,35 @@ class HomeFragment : Fragment() {
             // 3. Perform the fragment transaction
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, aboutUsFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
+        // Add BookingRequestFragment navigation
+        val card1 = view.findViewById<View>(R.id.card1)
+        card1.setOnClickListener {
+            val bookingRequestFragment = BookingRequestFragment()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, bookingRequestFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
+        // Add Book Ride Now button
+        val btnBookRideNow = view.findViewById<Button>(R.id.btnBookRideNow)
+        btnBookRideNow.setOnClickListener {
+            val bookingRequestFragment = BookingRequestFragment()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, bookingRequestFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
+        val btnViewBookings = view.findViewById<Button>(R.id.btnViewBookings)
+        btnViewBookings.setOnClickListener {
+            val bookingView = BookingsListFragment()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, bookingView)
                 .addToBackStack(null)
                 .commit()
         }
